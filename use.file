@@ -14,6 +14,7 @@ git status
 
 //查看文件异同
 git diff
+git diff HEAD -- <file>
 
 //日志
 git log
@@ -24,5 +25,11 @@ git reflog
 git reset --hard HEAD^
 git reset --hard HEAD~100
 git reset --hard <commit id>
+
+//撤销操作
+git checkout -- <file>	//使用暂存区的文件替换工作区的文件
+git reset HEAD <file>	//撤出暂存区
+
+
 
 
