@@ -1,0 +1,28 @@
+//设置用户名以及邮箱地址
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
+//创建版本库
+git init
+
+//添加修改
+git add <file>
+git commit -m "Message"
+
+//查询git状态
+git status
+
+//查看文件异同
+git diff
+
+//日志
+git log
+git log --pretty=oneline
+git reflog
+
+//移动指针
+git reset --hard HEAD^
+git reset --hard HEAD~100
+git reset --hard <commit id>
+
+
