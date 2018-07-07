@@ -20,7 +20,7 @@ git log
 git log --pretty=oneline
 git reflog
 
-//移动指针
+//更改HEAD指针
 git reset --hard HEAD^
 git reset --hard HEAD~100
 git reset --hard <commit id>
