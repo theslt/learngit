@@ -7,6 +7,7 @@ git init
 
 //添加修改
 git add <file>
+git rm <file>
 git commit -m "Message"
 
 //查询git状态
@@ -31,6 +32,17 @@ git checkout -- <file>		//使用暂存区的修改替换工作区的文件
 git checkout HEAD -- <file>	//使用版本库里的修改替换工作区的文件 
 git reset HEAD <file>	//撤出暂存区
 
+//远程仓库
+git clone git@<server-name>:<path>/<repo-name>.git
+git remote add origin git@<server-name>:<path>/<repo-name>.git
+git push -u origin master	//将本地master分支推送并关联到远程仓库origin
+git push origin master		//将本地master分支推送到远程仓库origin
 
+//分支
+git checkout -b <branch-name>	//创建并切换分支
+git checkout <branch-name>	//切换分支
+git branch 			//查看分支信息
+git branch -d <branch-name>	//删除分支
+git merge <branch-name>		//使当前分支指针与输入分支指针重合
 
 
