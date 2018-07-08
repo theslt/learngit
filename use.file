@@ -32,7 +32,7 @@ git reset --hard <commit id>
 //撤销操作
 git checkout -- <file>		//使用暂存区的修改替换工作区的文件
 git checkout HEAD -- <file>	//使用版本库里的修改替换工作区的文件 
-git reset HEAD <file>	//撤出暂存区
+git reset HEAD <file>		//撤出暂存区(???)
 
 //远程仓库
 git clone git@<server-name>:<path>/<repo-name>.git
@@ -46,6 +46,12 @@ git branch <branch-name>	//创建分支
 git branch -d <branch-name>	//删除分支
 git checkout <branch-name>      //切换分支
 git checkout -b <branch-name>   //创建并切换分支
-git merge <branch-name>		//使当前分支指针与输入分支指针重合
+git merge <branch-name>		//使当前分支与输入分支合并
+	--no-ff -m "Message"	//使当前分支与输入分支合并并创建新的版本
 
-
+//临时储存
+git stash
+git stash list
+git stash apply [Label]		//恢复工作现场
+git stash drop [Label]		//删除工作现场
+git stash pop [Label]		//取出工作现场
