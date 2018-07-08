@@ -19,7 +19,9 @@ git diff HEAD -- <file>
 
 //日志
 git log
-git log --pretty=oneline
+	 --pretty=oneline	//精简模式
+	 --graph		//分支合并图
+	 --abbrev-commit 	//提交校验码缩略显示	
 git reflog
 
 //更改HEAD指针
