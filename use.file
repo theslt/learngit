@@ -39,10 +39,11 @@ git push -u origin master	//将本地master分支推送并关联到远程仓库o
 git push origin master		//将本地master分支推送到远程仓库origin
 
 //分支
-git checkout -b <branch-name>	//创建并切换分支
-git checkout <branch-name>	//切换分支
 git branch 			//查看分支信息
+git branch <branch-name>	//创建分支
 git branch -d <branch-name>	//删除分支
+git checkout <branch-name>      //切换分支
+git checkout -b <branch-name>   //创建并切换分支
 git merge <branch-name>		//使当前分支指针与输入分支指针重合
 
 
